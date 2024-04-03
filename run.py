@@ -28,7 +28,6 @@ def sync_playlists(plex, sp, dz, user_inputs):
     else:
         logging.info("could not sync Deezer_playlists")
 
-
 def run():
     # Read ENV variables
     user_inputs = config.get_environment_variables()

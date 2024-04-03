@@ -52,7 +52,7 @@ docker run -d \
   -e PLEX_TOKEN=<Your token> \
   -e PLEX_USERNAME=<Username / email for your Plex Account> \
   -e PLEX_PASSWORD=<Password for your Plex Account> \
-  -e SERVER_NAME=<Name for your plex server ie plex> \
+  -e PLEX_SERVER_NAME=<Name for your plex server ie plex> \
   -e WRITE_MISSING_AS_CSV=<1 | 0> \
   -e APPEND_SERVICE_SUFFIX=<1 | 0> \
   -e ADD_PLAYLIST_POSTER=<1 | 0> \
@@ -92,7 +92,7 @@ services:
       - PLEX_TOKEN=<Your token>
       - PLEX_USERNAME=<Username / email for your Plex Account>
       - PLEX_PASSWORD=<Password for your Plex Account>
-      - SERVER_NAME=<Name for your plex server ie plex>
+      - PLEX_SERVER_NAME=<Name for your plex server ie plex>
       - WRITE_MISSING_AS_CSV=<1 | 0 >
       - APPEND_SERVICE_SUFFIX= <1 | 0>
       - ADD_PLAYLIST_POSTER= ><1 | 0 >

@@ -1,0 +1,22 @@
+[plex]
+url = ""
+token = ""
+username = "9_Mad-Max_5"
+password = "GAkM2HYpcq&GXKeF*Ws2"
+server_name = "docker-media"
+[general]
+write_missing_as_csv = true
+append_service_suffix = true
+add_playlist_poster = true
+add_playlist_description = true
+append_instead_of_sync = false
+wait_seconds = 84000
+[spotify]
+client_id = "cabb647ac3ec4be9b7559a99316b9840"
+client_secret = "3053bab776584567a3d6fdd54bfa1f97"
+user_id = "ikariam.ambrosia"
+redirect_uri = "http://localhost:8888/callback"
+daily_mixes = ""
+[deezer]
+user_id = ""
+playlist_ids = ""

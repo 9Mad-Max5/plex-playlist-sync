@@ -13,9 +13,9 @@ logging.getLogger(__name__)
 
 
 def _get_dz_playlists(
-        dz: deezer.Client(),
-        userInputs: UserInputs,
-        suffix: str = " - Deezer",
+    dz: deezer.Client(),
+    userInputs: UserInputs,
+    suffix: str = " - Deezer",
 ) -> List[Playlist]:
     """Get metadata for playlists in the given user_id.
 
@@ -37,8 +37,7 @@ def _get_dz_playlists(
         except:
             dz_user_playlists = []
             logging.info(
-                "Can't get playlists from this user, skipping deezer user"
-                " playlists"
+                "Can't get playlists from this user, skipping deezer user" " playlists"
             )
 
     if userInputs.deezer_playlist_ids:
@@ -70,8 +69,8 @@ def _get_dz_playlists(
 
 
 def _get_dz_tracks_from_playlist(
-        dz: deezer.Client(),
-        playlist: Playlist,
+    dz: deezer.Client(),
+    playlist: Playlist,
 ) -> List[Track]:
     """Return list of tracks with metadata.
 
@@ -97,7 +96,7 @@ def _get_dz_tracks_from_playlist(
 
 
 def deezer_playlist_sync(
-        dz: deezer.Client(), plex: PlexServer, userInputs: UserInputs
+    dz: deezer.Client(), plex: PlexServer, userInputs: UserInputs
 ) -> None:
     """Create/Update plex playlists with playlists from deezer.
 
